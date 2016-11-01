@@ -5,6 +5,7 @@
 (defvaralias 'css-indent-offset 'tab-width)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (electric-indent-mode 1)
+(global-set-key (kbd "TAB") 'self-insert-command)
 
 (add-hook 'html-mode-hook
 	  (lambda ()
