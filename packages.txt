@@ -1,1 +1,5 @@
 1. groovy-mode
+2. fiplr
+3. web-mode
+4. json-mode
+5. swift-mode
