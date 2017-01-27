@@ -20,7 +20,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (swift-mode json-mode web-mode fiplr groovy-mode))))
+ '(package-selected-packages
+   (quote
+    (scala-mode swift-mode json-mode web-mode fiplr groovy-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
