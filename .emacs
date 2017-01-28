@@ -1,3 +1,4 @@
+(setq inhibit-startup-screen t)
 (setq tab-width 8)
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
@@ -32,6 +33,8 @@
 
 (defalias 'ff 'fiplr-find-file)
 (defalias 'fd 'fiplr-find-directory)
+(defalias 'wm 'whitespace-mode)
+(global-linum-mode 1)
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
