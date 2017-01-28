@@ -22,7 +22,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (scala-mode swift-mode json-mode web-mode fiplr groovy-mode))))
+    (move-text scala-mode swift-mode json-mode web-mode fiplr groovy-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -43,3 +43,8 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ftl?\\'" . web-mode))
+
+(define-key input-decode-map "\e\eOA" [(meta up)])
+(define-key input-decode-map "\e\eOB" [(meta down)])
+(global-set-key [(meta up)] 'move-text-up)
+(global-set-key [(meta down)] 'move-text-down)
