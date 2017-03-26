@@ -23,7 +23,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (markdown-mode move-text scala-mode swift-mode json-mode web-mode groovy-mode))))
+    (auto-complete js2-mode rjsx-mode markdown-mode move-text scala-mode swift-mode json-mode web-mode groovy-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -48,3 +48,7 @@
 (define-key input-decode-map "\e\eOB" [(meta down)])
 (global-set-key [(meta up)] 'move-text-up)
 (global-set-key [(meta down)] 'move-text-down)
+
+(global-linum-mode 1)
+(require 'auto-complete)
+(global-auto-complete-mode t)
