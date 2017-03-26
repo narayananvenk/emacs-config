@@ -1,12 +1,13 @@
 (setq inhibit-startup-screen t)
 (setq tab-width 8)
 (defvaralias 'c-basic-offset 'tab-width)
-(defvaralias 'cperl-indent-level 'tab-width)
 (defvaralias 'js-indent-level 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)
 (defvaralias 'css-indent-offset 'tab-width)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (electric-indent-mode 1)
 (global-set-key (kbd "TAB") 'self-insert-command)
+(define-key global-map [?\M-\`] 'execute-extended-command)
 
 (add-hook 'html-mode-hook
 	  (lambda ()
@@ -23,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (auto-complete js2-mode rjsx-mode markdown-mode move-text scala-mode swift-mode json-mode web-mode groovy-mode))))
+    (js2-mode rjsx-mode markdown-mode move-text scala-mode swift-mode json-mode web-mode groovy-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -50,5 +51,3 @@
 (global-set-key [(meta down)] 'move-text-down)
 
 (global-linum-mode 1)
-(require 'auto-complete)
-(global-auto-complete-mode t)
