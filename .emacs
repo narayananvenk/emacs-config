@@ -24,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (js2-mode rjsx-mode markdown-mode move-text scala-mode swift-mode json-mode web-mode groovy-mode))))
+    (markdown-mode move-text scala-mode swift-mode json-mode web-mode groovy-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
