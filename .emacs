@@ -34,6 +34,10 @@
 
 (defalias 'wm 'whitespace-mode)
 (defalias 'eim 'electric-indent-mode)
+(defalias 'qr 'query-replace)
+(defalias 'qrr 'query-replace-regexp)
+
+(setq dabbrev-case-replace nil)
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
